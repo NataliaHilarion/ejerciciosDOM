@@ -15,15 +15,15 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  padding-block-start: 60px;
   font-size: 30px;
   font-weight: bold;
   color: #F8E009;
+  padding: 30px;
 }
 
 .modal a:hover {
   color: black;
-  text-decoration: underline;
+  background-color:rgba(197, 244, 10, 0.7) ;
 }
 
 /* The Close Button */
