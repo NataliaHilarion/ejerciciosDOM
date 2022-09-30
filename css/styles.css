@@ -1,0 +1,32 @@
+@import url(./section.css);
+@import url(./modal.css);
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  block-size: 100px;
+  background-color: #F1DE0A;
+  display: flex;
+}
+
+.header-title {
+  font-size: 40px;
+  font-family: var(--font-family);
+  margin: auto;
+}
+
+.hamburger {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
