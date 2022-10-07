@@ -32,33 +32,30 @@ header{
   background-color: var(--section-modal-color);
   inline-size: 100%;
   transition: transform .3s ease ;
-  /* desde arriba */
+  /* desde arriba
   transform: translate(0, -100%);
-  /* desde la derecha */
+  desde la derecha
   transform: translate(-100%, 0);
-  /* desde la izquierda */
+  desde la izquierda
   transform: translate(100%, 0);
-  /* desde abajo */
-  transform: translate(0, 100%);
+  desde abajo
+  transform: translate(0, 100%); */
+  opacity: 0;
+  visibility: hidden;
 }
 
 .panel.is-active{
-  transform: translate(0,0);
+  /* transform: translate(0,0); */
+  opacity: 1;
+  visibility: visible;
 }
 
 .panel-btn{
-  position: fixed;
-  z-index: 999;
   inset-block-end: 1vh;
   inset-inline-end: 1vw;
-  inline-size: 4rem;
-  block-size: 4rem;
-  border-radius: 50%;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
 }
 
 .menu{
