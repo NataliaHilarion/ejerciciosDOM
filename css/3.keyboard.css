@@ -1,0 +1,14 @@
+.stage{
+  display: flex;
+  min-block-size: 50vh;
+  background-color: var(--second-color);
+}
+
+.ball{
+  margin: auto;
+  inline-size: 4rem;
+  block-size: 4rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+
+}

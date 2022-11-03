@@ -1,0 +1,73 @@
+@media screen and (min-width: 1024px){
+  body{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas:
+    "header header"
+    "main   panel" ;
+  }
+
+  main{
+    grid-area: main;
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  .panel{
+    grid-area: panel;
+    position: sticky;
+    align-self: start;
+    justify-content: flex-start;
+    inset-block-start: 4rem;
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--second-color);
+    z-index: 900;
+  }
+
+  body::-webkit-scrollbar{
+    width: 10px;
+    background: white;
+  }
+
+  body::-webkit-scrollbar-thumb{
+    background-color: var(--second-color);
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+
+  .panel-btn{
+    display: none;
+  }
+
+  .menu{
+    justify-content: start;
+    text-align: center;
+    inline-size: auto;
+    overflow-x: hidden;
+  }
+
+  .menu a{
+    font-size: .85rem;
+    padding: 1.8rem;
+    text-decoration: none;
+  }
+
+  .menu a:hover,
+  .menu a.active{
+    color: var(--second-color);
+    background-color: var(--main-color);
+    inline-size: 80%;
+    transition: all .3s ease;
+  }
+
+  .scrollTopButton{
+    inset-inline-end: initial;
+    inset-inline-start: calc(4.25rem + 1vw);
+  }
+
+
+}

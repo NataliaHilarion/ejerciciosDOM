@@ -1,0 +1,17 @@
+.dark-theme{
+ inset-block-end: 1vh;
+ inset-inline-start: 1vw;
+ font-size: 2rem;
+ font-weight: bold;
+ transition: all 0.3s ease-out;
+}
+
+ .dark-theme:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+.dark-mode{
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
